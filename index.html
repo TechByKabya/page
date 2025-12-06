@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabya Ghosh | Maker & Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <canvas id="particle-canvas"></canvas>
+
+    <header id="main-nav">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Kabya<span>.Dev</span></a>
+
+            <ul class="menu" id="nav-menu">
+                <li><a href="#hero" data-cursor="Home">Home</a></li>
+                <li><a href="#about" data-cursor="About">Studio</a></li>
+                <li><a href="#projects" data-cursor="Work">Innovation</a></li>
+                <li><a href="#experience" data-cursor="Exp">Enterprise</a></li>
+                <li><a href="#contact" class="btn-nav" data-cursor="Connect">Connect</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-container">
+                <div class="hero-text animate-up">
+                    <span class="badge">Based in Bangladesh</span>
+                    <h1 class="hero-title-3d">Design.<br>Build.<br>Learn.</h1>
+                    <p class="bio">
+                        I work where hardware and software meet — building practical projects, helping teams, and
+                        learning along the way. I’ve contributed to student-record systems and small robotics projects
+                        that solve everyday problems.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn-primary" data-cursor="View Work">View Work</a>
+                        <a href="#contact" class="btn-secondary" data-cursor="Contact Me">Contact</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="tilt-card">
+                        <div class="float-card f-1">
+                            <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                            <span>Reliable</span>
+                        </div>
+                        <div class="float-card f-2">
+                            <div class="icon-box"><i class="fas fa-brain"></i></div>
+                            <span>AI experiments</span>
+                        </div>
+                        <img src="kabya.jpeg" alt="Kabya Ghosh" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-header center-text">
+                <h2>My Studio</h2>
+                <p class="sub-head">Where mechanical engineering and code come together.</p>
+            </div>
+
+            <div class="studio-grid">
+                <!-- Card 1: The Arsenal -->
+                <div class="studio-card" data-cursor="View Gear">
+                    <div class="st-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Workshop Tools</h3>
+                    <p class="st-desc">Some of the tools I use when I build prototypes and experiments.</p>
+                    <ul class="st-list">
+                        <li><i class="fas fa-print"></i> Creality Ender 3 V3 KE</li>
+                        <li><i class="fas fa-microchip"></i> Arduino / ESP32 / Pi</li>
+                        <li><i class="fas fa-cogs"></i> Stepper & BLDC Motors</li>
+                        <li><i class="fas fa-burn"></i> Soldering Station</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: The Stack -->
+                <div class="studio-card" data-cursor="Check Skills">
+                    <div class="st-icon"><i class="fas fa-code"></i></div>
+                    <h3>Tech & Tools</h3>
+                    <p class="st-desc">Technologies I rely on while prototyping and learning.</p>
+                    <div class="skills-cloud">
+                        <div class="skill-pill"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-pill"><i class="fas fa-robot"></i> ROS</div>
+                        <div class="skill-pill"><i class="fas fa-microchip"></i> C++</div>
+                        <div class="skill-pill"><i class="fas fa-layer-group"></i> PCB Design</div>
+                        <div class="skill-pill"><i class="fas fa-eye"></i> OpenCV</div>
+                        <div class="skill-pill"><i class="fas fa-cube"></i> Fusion 360</div>
+                    </div>
+                </div>
+
+                <!-- Card 3: The Vision -->
+                <div class="studio-card" data-cursor="Future">
+                    <div class="st-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Where I'm headed</h3>
+                    <p class="st-desc">A few directions I'm working toward, at a steady pace.</p>
+                    <ul class="st-list">
+                        <li><i class="fas fa-check-circle"></i> Grow a small R&D workspace</li>
+                        <li><i class="fas fa-check-circle"></i> Improve rover prototypes for real-world testing</li>
+                        <li><i class="fas fa-check-circle"></i> Keep learning embedded systems and hardware design</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: The Vibe -->
+                <div class="studio-card" data-cursor="Vibe">
+                    <div class="st-icon"><i class="fas fa-coffee"></i></div>
+                    <h3>The Vibe</h3>
+                    <p class="st-desc">I tend to choose practical parts and projects over flashy extras — a small parts
+                        collection and curiosity fuel most of my work.</p>
+                    <div class="st-footer">
+                        <span>Kabya Ghosh</span>
+                        <span class="st-role">Maker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <div class="section-header center-text">
+                    <h2>Selected Projects</h2>
+                    <p class="sub-head">A mix of hardware, software, and small experiments.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="project-card span-2" data-cursor="View Case">
+                        <img src="mission_bot.jpeg" alt="Mission Bot" class="p-bg">
+                        <div class="p-content">
+                            <span class="p-tag">Robotics</span>
+                            <h3>Mission Bot</h3>
+                            <p>A rover prototype that maps terrain and helps explore navigation ideas.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card span-1" data-cursor="View Details">
+                        <img src="prize.jpeg" alt="Award" class="p-bg">
+                        <div class="p-content">
+                            <span class="p-tag">Award</span>
+                            <h3>Flood Defense</h3>
+                            <p>A prototype for flood-awareness and practical response ideas.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card span-1" data-cursor="View Details">
+                        <img src="irrigtion.png" alt="Irrigation" class="p-bg">
+                        <div class="p-content">
+                            <span class="p-tag">IoT</span>
+                            <h3>Smart Agri</h3>
+                            <p>A sensor-driven irrigation helper to reduce water waste.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card span-2" data-cursor="Watch AI">
+                        <img src="kgs1.jpeg" alt="AI" class="p-bg">
+                        <div class="p-content">
+                            <span class="p-tag">Artificial Intelligence</span>
+                            <h3>KGs1 Neural Net</h3>
+                            <p>A small, experimental project exploring natural language techniques.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card span-2 dark-card" data-cursor="GitHub">
+                        <a href="https://github.com/TechByKabya" target="_blank" class="full-link">
+                            <div class="center-content">
+                                <i class="fab fa-github fa-3x"></i>
+                                <h3>View 15+ More Projects</h3>
+                                <p>Check the Source Code</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="enterprise-3d-container">
+                <div class="stack-wrapper">
+                    <!-- Layer 1: Web Page (Back Left) -->
+                    <div class="stack-card visual-card card-back">
+                        <img src="web_page.png" alt="College Website">
+                    </div>
+
+                    <!-- Layer 2: Dashboard (Back Right) -->
+                    <div class="stack-card visual-card card-mid">
+                        <img src="ERP dashboard.png" alt="ERP Dashboard">
+                    </div>
+
+                    <!-- Layer 3: Content (Front) -->
+                    <div class="stack-card content-card">
+                        <span class="badge">Enterprise Scale</span>
+                        <h2>CampusCore ERP</h2>
+                        <p>Worked on a full-stack campus system to handle student records and common administrative
+                            tasks — helping staff by automating routine workflows and record keeping.</p>
+
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Real-time Database</li>
+                            <li><i class="fas fa-check"></i> Biometric Integration</li>
+                            <li><i class="fas fa-check"></i> Automated Fee Slips</li>
+                        </ul>
+
+                        <a href="https://shimu-rezampcollege.edu.bd/" target="_blank" class="btn-primary"
+                            style="margin-top: 20px; display: inline-block;" data-cursor="Visit Site">Live Website</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="footer-content">
+                <h2>Interested in collaborating?</h2>
+                <p>Open to practical collaborations, small R&D efforts, and project work.</p>
+                <a href="mailto:kabyaghosh4@gmail.com" class="btn-primary">Get in Touch</a>
+                <p style="margin-top: 15px; font-weight: 600;">+880 1950-440296</p>
+
+                <div class="social-links">
+                    <a href="https://facebook.com/kabya.ghosh.official" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/TechByKabya" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/@KraftGenesis" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="copyright">
+                    &copy; <span id="current-year"></span> Kabya Ghosh. Made with care.
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- My Files Modal (Moved outside wrapper for correct z-index stacking) -->
+    <div class="files-modal" id="files-modal">
+        <div class="files-header">
+            <div class="files-title">
+                <i class="fas fa-folder-open"></i>
+                <span>My Files</span>
+            </div>
+            <button id="close-files" data-cursor="Close">×</button>
+        </div>
+
+        <!-- Password Screen -->
+        <div class="password-screen" id="password-screen">
+            <div class="password-content">
+                <i class="fas fa-lock password-icon"></i>
+                <h3>Protected Files</h3>
+                <p>Enter password to access files</p>
+                <div class="password-input-wrapper">
+                    <input type="password" id="password-input" placeholder="Enter password" data-cursor="Type">
+                    <button id="password-submit" data-cursor="Submit">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <p class="password-error" id="password-error">Incorrect password. Try again.</p>
+            </div>
+        </div>
+
+        <!-- Files Body (hidden until password is correct) -->
+        <div class="files-body" id="files-body" style="display: none;">
+            <!-- File Card -->
+            <div class="file-card" data-cursor="Download">
+                <div class="file-icon-wrapper">
+                    <i class="fas fa-file-powerpoint file-icon"></i>
+                    <div class="file-pulse"></div>
+                </div>
+                <div class="file-details">
+                    <h4 class="file-name">bio presentation.pptx</h4>
+                    <p class="file-meta">
+                        <span class="file-size">44.3 MB</span>
+                        <span class="file-separator">•</span>
+                        <span class="file-type">PowerPoint</span>
+                    </p>
+                    <p class="file-uploader">
+                        <i class="fas fa-user-circle"></i> Uploaded by <strong>techkabya</strong>
+                    </p>
+                </div>
+                <a href="https://docs.google.com/presentation/d/1m-HOuEexPHTHsKEzgdRT-wv6JB15d-Wu/export/pptx"
+                    class="file-download-btn" data-cursor="Download">
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Files Button -->
+    <div class="files-wrapper">
+        <button class="files-toggler" id="files-toggler" data-cursor="My Files">
+            <i class="fas fa-folder"></i>
+            <span>My Files</span>
+        </button>
+    </div>
+
+    <div class="chatbot-wrapper">
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chat-header">
+                <div class="bot-id">
+                    <div class="bot-dot"></div>
+                    <span>Kabya AI</span>
+                </div>
+                <button id="close-bot">×</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="msg bot-msg">Hello — ask me about <strong>projects</strong>, <strong>skills</strong>, or
+                    how to get in touch.
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chatbot-toggler" id="chatbot-toggler">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+</body>
+
+</html>
