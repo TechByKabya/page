@@ -766,7 +766,7 @@ footer {
     }
 
     /* Chatbot Mobile Fix */
-    .chat-container {
+    .chatbot-window {
         width: 90%;
         right: 5%;
         bottom: 80px;
